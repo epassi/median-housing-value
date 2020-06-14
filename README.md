@@ -1,9 +1,3 @@
-# README
+# Median Housing Value
 
-This is the [Flask](http://flask.pocoo.org/) [quick start](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application) example for [Render](https://render.com).
-
-The app in this repo is deployed at [https://flask.onrender.com](https://flask.onrender.com).
-
-## Deployment
-
-Follow the guide at https://render.com/docs/deploy-flask.
+Web service for the machine learning exercise in [Hands-On Machine Learning](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646), chapter 2.
