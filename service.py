@@ -1,13 +1,12 @@
 import numpy as np
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 # from sklearn.externals import joblib
 import joblib
 
 app = Flask(__name__)
-
-app.config['CORS_HEADERS'] = 'Content-Type'
-CORS(app)
+# app.config['CORS_HEADERS'] = 'Content-Type'
+CORS(app, resources={r'/*': {'origins': '*'}})
 # model = joblib.load(open('median-house-value.pkl', 'rb'))
 model = joblib.load('median-house-value.joblib')
 
