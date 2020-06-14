@@ -1,2 +1,5 @@
 Flask
+flask_cors
 Gunicorn
+numpy
+sklearn
