@@ -14,6 +14,10 @@ app = Flask(__name__)
 # model = joblib.load(open('median-house-value.pkl', 'rb'))
 model = joblib.load('median-house-value.joblib')
 
+@app.route('/', methods=['GET'])
+def root():
+    return 'hey there'
+
 @app.route('/median-house-value',methods=['POST'])
 def results():
     data = request.get_json(force=True)
