@@ -1,9 +1,8 @@
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from sklearn.externals import joblib
-# import pickle
-
+# from sklearn.externals import joblib
+import joblib
 
 app = Flask(__name__)
 
